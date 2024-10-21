@@ -1,0 +1,16 @@
+{
+  "name": "lhokxplore",
+  "version": "1.0.0",
+  "description": "ini adalah sebuah projek akhir",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Farhan and Fauzan Azima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
