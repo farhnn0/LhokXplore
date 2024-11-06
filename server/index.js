@@ -1,9 +1,18 @@
 import express from "express";
 import "dotenv/config"; 
 import {db} from "./configs/db.js"
+import userRoutes from "./routes/user.route.js"
 
 const app = express();
+
+// middleware
+app.use(express.json());
+
 const PORT = process.env.PORT;
+
+// api
+app.use("/api/v1/users", userRoutes);
+
 
 app.use("/", (req, res) => {
     res.status(200).json({
